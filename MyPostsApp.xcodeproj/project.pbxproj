@@ -17,6 +17,17 @@
 		356EA6AB29B35B9100F70F81 /* MyPostsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA6AA29B35B9100F70F81 /* MyPostsAppTests.swift */; };
 		356EA6B529B35B9100F70F81 /* MyPostsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA6B429B35B9100F70F81 /* MyPostsAppUITests.swift */; };
 		356EA6B729B35B9100F70F81 /* MyPostsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA6B629B35B9100F70F81 /* MyPostsAppUITestsLaunchTests.swift */; };
+		356EA6C829B3672800F70F81 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA6C729B3672800F70F81 /* Posts.swift */; };
+		356EA6CC29B367CA00F70F81 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA6CB29B367CA00F70F81 /* FavoritesViewController.swift */; };
+		356EA6CE29B367E000F70F81 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA6CD29B367E000F70F81 /* PostsViewController.swift */; };
+		356EA79129B3EA0100F70F81 /* WindowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA79029B3EA0100F70F81 /* WindowCoordinator.swift */; };
+		356EA79229B3EA0100F70F81 /* WindowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA79029B3EA0100F70F81 /* WindowCoordinator.swift */; };
+		356EA79529B3EA3100F70F81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA79429B3EA3100F70F81 /* LoginViewController.swift */; };
+		356EA79629B3EA3100F70F81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA79429B3EA3100F70F81 /* LoginViewController.swift */; };
+		356EA79829B3EA4B00F70F81 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA79729B3EA4B00F70F81 /* LoginViewModel.swift */; };
+		356EA79929B3EA4B00F70F81 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA79729B3EA4B00F70F81 /* LoginViewModel.swift */; };
+		356EA79B29B3EA7B00F70F81 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA79A29B3EA7B00F70F81 /* TabBarViewModel.swift */; };
+		356EA79C29B3EA7B00F70F81 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA79A29B3EA7B00F70F81 /* TabBarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +62,13 @@
 		356EA6B029B35B9100F70F81 /* MyPostsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPostsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		356EA6B429B35B9100F70F81 /* MyPostsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostsAppUITests.swift; sourceTree = "<group>"; };
 		356EA6B629B35B9100F70F81 /* MyPostsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		356EA6C729B3672800F70F81 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		356EA6CB29B367CA00F70F81 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FavoritesViewController.swift; path = MyPostsApp/Controllers/Favourites/FavoritesViewController.swift; sourceTree = SOURCE_ROOT; };
+		356EA6CD29B367E000F70F81 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		356EA79029B3EA0100F70F81 /* WindowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowCoordinator.swift; sourceTree = "<group>"; };
+		356EA79429B3EA3100F70F81 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		356EA79729B3EA4B00F70F81 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		356EA79A29B3EA7B00F70F81 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +119,8 @@
 		356EA68F29B35B8F00F70F81 /* MyPostsApp */ = {
 			isa = PBXGroup;
 			children = (
+				356EA79329B3EA1D00F70F81 /* Login */,
+				356EA6C629B3671A00F70F81 /* Model */,
 				356EA6C529B35F2E00F70F81 /* Controllers */,
 				356EA6C429B35F1F00F70F81 /* Network */,
 				356EA6C329B35F1500F70F81 /* Utils */,
@@ -112,6 +132,8 @@
 				356EA69E29B35B9100F70F81 /* LaunchScreen.storyboard */,
 				356EA6A129B35B9100F70F81 /* Info.plist */,
 				356EA69929B35B8F00F70F81 /* MyPostsApp.xcdatamodeld */,
+				356EA79029B3EA0100F70F81 /* WindowCoordinator.swift */,
+				356EA79A29B3EA7B00F70F81 /* TabBarViewModel.swift */,
 			);
 			path = MyPostsApp;
 			sourceTree = "<group>";
@@ -150,8 +172,43 @@
 		356EA6C529B35F2E00F70F81 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				356EA6CA29B367A600F70F81 /* Favourites */,
+				356EA6C929B3679800F70F81 /* AllPosts */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		356EA6C629B3671A00F70F81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				356EA6C729B3672800F70F81 /* Posts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		356EA6C929B3679800F70F81 /* AllPosts */ = {
+			isa = PBXGroup;
+			children = (
+				356EA6CD29B367E000F70F81 /* PostsViewController.swift */,
+			);
+			path = AllPosts;
+			sourceTree = "<group>";
+		};
+		356EA6CA29B367A600F70F81 /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				356EA6CB29B367CA00F70F81 /* FavoritesViewController.swift */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		356EA79329B3EA1D00F70F81 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				356EA79429B3EA3100F70F81 /* LoginViewController.swift */,
+				356EA79729B3EA4B00F70F81 /* LoginViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,9 +342,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				356EA79529B3EA3100F70F81 /* LoginViewController.swift in Sources */,
+				356EA6CE29B367E000F70F81 /* PostsViewController.swift in Sources */,
 				356EA69529B35B8F00F70F81 /* ViewController.swift in Sources */,
 				356EA69129B35B8F00F70F81 /* AppDelegate.swift in Sources */,
+				356EA6C829B3672800F70F81 /* Posts.swift in Sources */,
 				356EA69329B35B8F00F70F81 /* SceneDelegate.swift in Sources */,
+				356EA6CC29B367CA00F70F81 /* FavoritesViewController.swift in Sources */,
+				356EA79129B3EA0100F70F81 /* WindowCoordinator.swift in Sources */,
+				356EA79829B3EA4B00F70F81 /* LoginViewModel.swift in Sources */,
+				356EA79B29B3EA7B00F70F81 /* TabBarViewModel.swift in Sources */,
 				356EA69B29B35B8F00F70F81 /* MyPostsApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +360,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				356EA79C29B3EA7B00F70F81 /* TabBarViewModel.swift in Sources */,
+				356EA79929B3EA4B00F70F81 /* LoginViewModel.swift in Sources */,
+				356EA79629B3EA3100F70F81 /* LoginViewController.swift in Sources */,
+				356EA79229B3EA0100F70F81 /* WindowCoordinator.swift in Sources */,
 				356EA6AB29B35B9100F70F81 /* MyPostsAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
