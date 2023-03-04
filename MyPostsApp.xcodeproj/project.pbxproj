@@ -101,6 +101,9 @@
 		356EA68F29B35B8F00F70F81 /* MyPostsApp */ = {
 			isa = PBXGroup;
 			children = (
+				356EA6C529B35F2E00F70F81 /* Controllers */,
+				356EA6C429B35F1F00F70F81 /* Network */,
+				356EA6C329B35F1500F70F81 /* Utils */,
 				356EA69029B35B8F00F70F81 /* AppDelegate.swift */,
 				356EA69229B35B8F00F70F81 /* SceneDelegate.swift */,
 				356EA69429B35B8F00F70F81 /* ViewController.swift */,
@@ -128,6 +131,27 @@
 				356EA6B629B35B9100F70F81 /* MyPostsAppUITestsLaunchTests.swift */,
 			);
 			path = MyPostsAppUITests;
+			sourceTree = "<group>";
+		};
+		356EA6C329B35F1500F70F81 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		356EA6C429B35F1F00F70F81 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		356EA6C529B35F2E00F70F81 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
