@@ -7,24 +7,62 @@
 
 import UIKit
 
-class FavoritesViewController: UIViewController {
-
+class FavoritesViewController: BaseViewController {
+    
+    lazy var viewModel = {
+        PostViewModel()
+    }()
+    @IBOutlet weak var ListTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-
-        // Do any additional setup after loading the view.
+        setDefaultNavigationBar("Favourites")
+        loadTable()
+        initViewModel()
+    }
+    func loadTable() {
+        
+        ListTableView.register(PostTableViewCell.nib, forCellReuseIdentifier: PostTableViewCell.identifier)
+        ListTableView.reloadData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func initViewModel() {
+        viewModel.getPosts(userID: 1)
+        viewModel.reloadTableView = {[weak self] in
+            DispatchQueue.main.async {
+                self?.ListTableView.reloadData()
+            }
+        }
     }
-    */
-
+    
+    
+    
 }
+
+extension FavoritesViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        viewModel.postCellViewModels.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: PostTableViewCell.identifier, for: indexPath) as? PostTableViewCell else {
+            fatalError("xib does not exists")
+        }
+        
+        let cellVM = viewModel.getCellViewModel(at: indexPath)
+        cell.cellViewModel = cellVM
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //CommentsViewController
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vcs = storyboard.instantiateViewController(withIdentifier: "CommentsViewController") as! CommentsViewController
+        vcs.modalPresentationStyle = .fullScreen
+        self.present(vcs, animated: false, completion: nil)
+    }
+    
+    
+    
+}
+
+

@@ -38,12 +38,8 @@ class LoginViewController: UIViewController {
             DispatchQueue.main.async {
                 if isSuccess {
                     let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as! SceneDelegate
-                    //                    let appdelegate = UIApplication.shared.delegate as! AppDelegate
-                    //                    appdelegate.windowCoordinator.presentTabBarController()
                     sceneDelegate.windowCoordinator.presentTabBarController()
-                    //                    let appdelegate = UIApplication.shared.delegate as! AppDelegate
-                    //                    appdelegate.windowCoordinator = WindowCoordinator(window: appdelegate.window ?? UIWindow())
-                    //                    appdelegate.windowCoordinator.presentTabBarController()
+
                 } else {
                     let alert = UIAlertController(title: "Error", message: "Invalid UserID", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))

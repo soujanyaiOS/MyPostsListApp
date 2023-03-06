@@ -15,17 +15,20 @@ class TabBarViewModel {
         let image: UIImage?
     }
     
-    let childViewControllers = [
-           PostsViewController(),
-           FavoritesViewController()
-       ]
-    
     var childViewModels: [ChildViewModel] {
         return [
             ChildViewModel(title: "Home", image: UIImage(systemName: "house")),
             ChildViewModel(title: "Favourites", image: UIImage(systemName: "heart.fill"))
            
         ]
+    }
+    
+    lazy var childViewControllers :[UIViewController] = {
+        return [VCinst(name: "PostsViewController"),VCinst(name: "FavoritesViewController")]
+    }()
+
+    func VCinst(name:String) -> UIViewController {
+           return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: name)
     }
     
     var selectedIndex: Int {
