@@ -10,35 +10,49 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" restorationIdentifier="PostTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostTableViewCell" rowHeight="104" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="MyPostsApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="PostTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostTableViewCell" rowHeight="154" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="MyPostsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="161"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="161"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B93-SI-9e4">
-                        <rect key="frame" x="16" y="10" width="288" height="37"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <nil key="textColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B93-SI-9e4">
+                        <rect key="frame" x="0.0" y="10" width="264" height="54"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <color key="textColor" red="0.093260757625102997" green="0.40170907974243164" blue="0.64263993501663208" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfC-si-K9C">
-                        <rect key="frame" x="16" y="48" width="288" height="47"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfC-si-K9C">
+                        <rect key="frame" x="0.0" y="72" width="304" height="80"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="47" id="qcR-wv-9bn"/>
+                            <constraint firstAttribute="height" constant="80" id="qcR-wv-9bn"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" systemColor="systemGrayColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntl-g0-wrA">
+                        <rect key="frame" x="265" y="13" width="55" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="XMc-1r-orL"/>
+                            <constraint firstAttribute="height" constant="31" id="pjT-TF-hk8"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                        <connections>
+                            <action selector="addToFavouritesAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MoZ-s5-fDc"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="B93-SI-9e4" secondAttribute="trailing" constant="16" id="GXU-hF-QNo"/>
-                    <constraint firstItem="QfC-si-K9C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="QYU-m5-Rpm"/>
+                    <constraint firstItem="ntl-g0-wrA" firstAttribute="leading" secondItem="B93-SI-9e4" secondAttribute="trailing" constant="1" id="5YQ-3Z-Oka"/>
+                    <constraint firstItem="ntl-g0-wrA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="6G2-V6-1ko"/>
+                    <constraint firstAttribute="trailing" secondItem="ntl-g0-wrA" secondAttribute="trailing" id="78D-gH-m0T"/>
+                    <constraint firstItem="QfC-si-K9C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QYU-m5-Rpm"/>
                     <constraint firstItem="B93-SI-9e4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fJA-a6-t8p"/>
-                    <constraint firstItem="QfC-si-K9C" firstAttribute="top" secondItem="B93-SI-9e4" secondAttribute="bottom" constant="1" id="lRe-do-yDW"/>
-                    <constraint firstItem="B93-SI-9e4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="tFE-Xy-s7k"/>
+                    <constraint firstItem="QfC-si-K9C" firstAttribute="top" secondItem="B93-SI-9e4" secondAttribute="bottom" constant="8" id="lRe-do-yDW"/>
+                    <constraint firstItem="B93-SI-9e4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tFE-Xy-s7k"/>
                     <constraint firstAttribute="bottom" secondItem="QfC-si-K9C" secondAttribute="bottom" constant="9" id="tek-Rp-PBn"/>
                     <constraint firstAttribute="trailing" secondItem="QfC-si-K9C" secondAttribute="trailing" constant="16" id="w9K-HR-rr7"/>
                 </constraints>
@@ -46,12 +60,14 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="bodyLabel" destination="QfC-si-K9C" id="V1t-em-xco"/>
+                <outlet property="favButton" destination="ntl-g0-wrA" id="mO5-HH-exY"/>
                 <outlet property="titleLabel" destination="B93-SI-9e4" id="rVH-1q-IQy"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="100.44642857142857"/>
+            <point key="canvasLocation" x="137.68115942028987" y="83.370535714285708"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

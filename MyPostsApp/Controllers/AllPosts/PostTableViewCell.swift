@@ -6,12 +6,16 @@
 //
 
 import UIKit
-
+import CoreData
+protocol PostTableViewCellProtocal: AnyObject {
+    func reloadData()
+}
 class PostTableViewCell: UITableViewCell {
-    
+    weak var delegate: PostTableViewCellProtocal?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bodyLabel: UILabel!
-
+    @IBOutlet weak var favButton: UIButton!
+    
     class var identifier: String { return String(describing: PostTableViewCell.self)}
     class var nib: UINib { return UINib(nibName: identifier, bundle: nil)}
     
@@ -19,6 +23,12 @@ class PostTableViewCell: UITableViewCell {
         didSet {
             titleLabel.text = cellViewModel?.title
             bodyLabel.text = cellViewModel?.body
+            if AppDelegate.sharedAppDelegate.coreDataStack.checkIfRecordExists(withID: cellViewModel?.id ?? 0) {
+                favButton.setImage(UIImage(systemName: "star"), for: .normal)
+            }
+            else{
+                favButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
+            }
         }
     }
     
@@ -40,6 +50,17 @@ class PostTableViewCell: UITableViewCell {
         bodyLabel.text = nil
     }
     
-  
-    
+    ///Save to Favourites
+    @IBAction func addToFavouritesAction(_ sender: UIButton) {
+        
+        if AppDelegate.sharedAppDelegate.coreDataStack.checkIfRecordExists(withID: cellViewModel?.id ?? 0) {
+            AppDelegate.sharedAppDelegate.coreDataStack.saveToFavourites(cellViewModel: cellViewModel)
+            delegate?.reloadData()
+        }
+        else {
+            print("Record ID \(self.cellViewModel?.id ?? 0)  exists!")
+        }
+        
+    }
 }
+

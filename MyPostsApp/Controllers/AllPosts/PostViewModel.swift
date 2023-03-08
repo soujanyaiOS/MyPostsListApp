@@ -11,6 +11,8 @@ struct PostCellViewModel {
     var id: Int
     var title: String
     var body: String
+    var userId: Int
+    
 }
 
 
@@ -24,13 +26,23 @@ class PostViewModel: NSObject {
         }
     }
     
-    
+    var userID: Int? {
+        get {
+            return UserDefaults.standard.integer(forKey: "userID") 
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "userID") 
+        }
+    }
     private var postApiService: PostsNetworkManagerProtocal
-    
+
     init(postApiService: PostsNetworkManagerProtocal = PostsNetworkManager()) {
         self.postApiService = postApiService
     }
     
+    init(apiService: PostsNetworkManagerProtocal) {
+           self.postApiService = apiService
+       }
     
     func fetchData(posts: Posts) {
         self.posts = posts
@@ -42,14 +54,15 @@ class PostViewModel: NSObject {
     }
     
     func createCellModel(post: Post) -> PostCellViewModel {
-        let userId = post.userID
+        let idValue = post.id
         let title = post.title
         let body = post.body
-        return PostCellViewModel(id: userId, title: title, body: body)
+        let userID = post.userID
+        return PostCellViewModel(id: idValue, title: title, body: body, userId: userID)
     }
     
     func getPosts(userID: Int) {
-        postApiService.getPost(userID: userID) { data in
+        postApiService.getPost(userId: userID) { data in
             switch data {
             case .success(let post):
                 print(post)
@@ -61,7 +74,7 @@ class PostViewModel: NSObject {
     }
     
     func getCellViewModel(at indexPath: IndexPath) -> PostCellViewModel {
-            return postCellViewModels[indexPath.row]
-        }
+        return postCellViewModels[indexPath.row]
+    }
     
 }

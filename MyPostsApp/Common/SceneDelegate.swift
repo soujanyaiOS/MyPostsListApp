@@ -14,6 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+       // AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
         windowCoordinator = WindowCoordinator(window: window!)
         windowCoordinator.presentLoginViewController()
     }

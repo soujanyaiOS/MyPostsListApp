@@ -8,54 +8,51 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-
-  //  var ListTableView = UITableView()
-    var label = UILabel()
- 
+    
+    lazy var myLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.textAlignment = .center
+        return label
+    }()
+    
+    lazy var logoutButton: UIButton = {
+        let btn = UIButton()
+        btn.setImage(ButtonImage.logout.image, for: .normal)
+        return btn
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .darkGray
+        setLogoutButton()
+    }
+    
+    @objc func logout() {
+        let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as! SceneDelegate
+        sceneDelegate.windowCoordinator.presentLoginViewController()
+    }
+    
+    private func setLogoutButton() {
+        logoutButton.frame = CGRect(x: self.view.frame.width - 55, y: 45, width: 25, height: 25)
+        logoutButton.addTarget(self, action: #selector(logout), for: .touchUpInside)
+        self.view.addSubview(logoutButton)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-       
-    }
-
-    public func setDefaultNavigationBar(_ title: String) {
-        label.frame = CGRect(x: 0, y: 60, width: self.view.frame.width, height: 44)
-        label.text = title
-        label.textColor = .white
-        label.textAlignment = .center
-        self.view.addSubview(label)
     }
     
-    func setNavigationBarAppearence(withBackgroundColor color: UIColor) {
-        // Make the navigation bar's title with red text.
-        if #available(iOS 13.0, *) {
-            let appearance = UINavigationBarAppearance()
-            appearance.configureWithOpaqueBackground()
-            appearance.backgroundColor = color
-            navigationItem.standardAppearance = appearance
-            navigationItem.scrollEdgeAppearance = appearance
-            navigationItem.compactAppearance = appearance // For iPhone small navigation bar in landscape.
-        }
+    public func setDefaultNavigationBar(_ title: String) {
+        myLabel.frame = CGRect(x: 0, y: 40, width: self.view.frame.width, height: 44)
+        myLabel.text = title
+        self.view.addSubview(myLabel)
     }
-
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-       
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
