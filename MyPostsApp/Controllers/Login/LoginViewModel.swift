@@ -9,21 +9,11 @@ import Foundation
 
 
 class LoginViewModel {
-    
-    var reloadView: (() -> Void)?
-    var errorHandler: ((Error) -> Void)?
     var userID = ""
-//    var isLoginEnabled: Bool {
-//        return  userID != ""
-//    }
-    
-    var posts = [Post](){
-        didSet {
-            reloadView?()
-        }
+    var isLoginEnabled: Bool {
+        return !userID.isEmpty
     }
     
-   
     private var loginApiService: LoginNetworkManagerProtocal
     
     init(loginApiService: LoginNetworkManagerProtocal = LoginNetworkManager()) {
@@ -31,53 +21,18 @@ class LoginViewModel {
     }
     
     
-    func loginAPI(userID: String) {
-        loginApiService.login(userId: userID) { [weak self] data in
+    func loginAPI(userID: String,completion: @escaping(Result<[Post],Error>) -> Void) {
+        loginApiService.login(userId: userID) { data in
             switch data {
             case .success(let post):
-                print(post)
-                self?.posts = post
-               
+                completion(.success(post))
+                
             case .failure(let error):
-                self?.errorHandler?(error)
+                completion(.failure(error))
             }
         }
     }
     
-    
-//    func login(userID: String , completion: @escaping (Bool) -> Void) {
-//
-//        if let url =  URL(string: "https://jsonplaceholder.typicode.com/posts?userId=\(userID)") {
-//            let urlSession =    URLSession.shared.dataTask(with: url) { (data, response, error) in
-//                if let error = error {
-//                    completion(false)
-//                }
-//                
-//                if let data = data {
-//                    do {
-//                        let result = try JSONDecoder().decode([Post].self, from: data)
-//                        if result.count > 0 {
-//                            let defaults = UserDefaults.standard
-//                            defaults.set(userID, forKey: "userID")
-//                            defaults.synchronize()
-//                            completion(true)
-//                        }
-//                        else {
-//                            completion(false)
-//                        }
-//                    }
-//                    catch { }
-//                    
-//                }
-//            }
-//            urlSession.resume()
-//        }
-//        
-//        
-//    }
-    
-    
-   
 }
 
 

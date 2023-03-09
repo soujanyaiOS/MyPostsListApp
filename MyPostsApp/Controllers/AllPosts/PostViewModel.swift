@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PostCellViewModel {
+struct PostsDataModel {
     var id: Int
     var title: String
     var body: String
@@ -20,7 +20,7 @@ class PostViewModel: NSObject {
     var reloadTableView: (() -> Void)?
     var posts = Posts()
     
-    var postCellViewModels = [PostCellViewModel](){
+    var postCellViewModels = [PostsDataModel](){
         didSet {
             reloadTableView?()
         }
@@ -46,19 +46,19 @@ class PostViewModel: NSObject {
     
     func fetchData(posts: Posts) {
         self.posts = posts
-        var vms = [PostCellViewModel]()
+        var vms = [PostsDataModel]()
         for post in posts {
             vms.append(createCellModel(post: post))
         }
         postCellViewModels = vms
     }
     
-    func createCellModel(post: Post) -> PostCellViewModel {
+    func createCellModel(post: Post) -> PostsDataModel {
         let idValue = post.id
         let title = post.title
         let body = post.body
         let userID = post.userID
-        return PostCellViewModel(id: idValue, title: title, body: body, userId: userID)
+        return PostsDataModel(id: idValue, title: title, body: body, userId: userID)
     }
     
     func getPosts(userID: Int) {
@@ -73,7 +73,7 @@ class PostViewModel: NSObject {
         }
     }
     
-    func getCellViewModel(at indexPath: IndexPath) -> PostCellViewModel {
+    func getCellViewModel(at indexPath: IndexPath) -> PostsDataModel {
         return postCellViewModels[indexPath.row]
     }
     

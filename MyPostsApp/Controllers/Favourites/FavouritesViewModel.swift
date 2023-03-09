@@ -19,13 +19,15 @@ struct FavoriteCellViewModel {
 class FavouritesViewModel: NSObject {
     var reloadTableView: (() -> Void)?
     var favouritesArray: [PostsEntity] = []
+   // var favObj : FavouriteRepository?
+   
     
     var cellViewModels = [FavoriteCellViewModel](){
         didSet {
             reloadTableView?()
         }
     }
-   
+    
     func getFavourites() {
         let favouriteObjFetch: NSFetchRequest<PostsEntity> = PostsEntity.fetchRequest()
         let sortById = NSSortDescriptor(key: "id", ascending: false)
@@ -39,6 +41,7 @@ class FavouritesViewModel: NSObject {
         } catch let error as NSError {
             debugPrint("Fetch error: \(error) description: \(error.userInfo)")
         }
+
     }
     
     func fetchData(posts: [PostsEntity]) {
@@ -58,9 +61,9 @@ class FavouritesViewModel: NSObject {
         return FavoriteCellViewModel(id: Int(idValue), title: title, body: body, userId: userID)
     }
     
-  
+    
     func getCellViewModel(at indexPath: IndexPath) -> FavoriteCellViewModel {
-            return cellViewModels[indexPath.row]
-        }
+        return cellViewModels[indexPath.row]
+    }
     
 }

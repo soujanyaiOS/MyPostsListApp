@@ -38,6 +38,8 @@ class PostListviewclass: XCTestCase {
             }
             XCTAssertEqual(posts.count, 2)
             XCTAssertEqual(posts.first?.title, "Mock Post")
+            XCTAssertEqual(posts.last?.title, "qui est esse")
+            XCTAssertEqual(posts.last?.body, "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla")
         }
     }
     
@@ -58,6 +60,11 @@ class PostListviewclass: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    override func tearDown() {
+        viewModel = nil
+        super.tearDown()
     }
     
 }

@@ -17,7 +17,7 @@ class TabBarViewModel {
     
     var childViewModels: [ChildViewModel] {
         return [
-            ChildViewModel(title: "Home", image: UIImage(systemName: "house")),
+            ChildViewModel(title: "ALL", image: UIImage(systemName: "list.dash")),
             ChildViewModel(title: "Favourites", image: UIImage(systemName: "heart.fill"))
            
         ]

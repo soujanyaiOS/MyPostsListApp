@@ -15,11 +15,12 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bodyLabel: UILabel!
     @IBOutlet weak var favButton: UIButton!
+    var favObject : FavouriteRepository?
     
     class var identifier: String { return String(describing: PostTableViewCell.self)}
     class var nib: UINib { return UINib(nibName: identifier, bundle: nil)}
     
-    var cellViewModel: PostCellViewModel? {
+    var cellViewModel: PostsDataModel? {
         didSet {
             titleLabel.text = cellViewModel?.title
             bodyLabel.text = cellViewModel?.body
@@ -54,13 +55,14 @@ class PostTableViewCell: UITableViewCell {
     @IBAction func addToFavouritesAction(_ sender: UIButton) {
         
         if AppDelegate.sharedAppDelegate.coreDataStack.checkIfRecordExists(withID: cellViewModel?.id ?? 0) {
-            AppDelegate.sharedAppDelegate.coreDataStack.saveToFavourites(cellViewModel: cellViewModel)
+            if let cellModel = cellViewModel {
+            AppDelegate.sharedAppDelegate.coreDataStack.saveToFavourites(cellViewModel: cellModel)
             delegate?.reloadData()
+            }
         }
         else {
             print("Record ID \(self.cellViewModel?.id ?? 0)  exists!")
         }
-        
     }
 }
 

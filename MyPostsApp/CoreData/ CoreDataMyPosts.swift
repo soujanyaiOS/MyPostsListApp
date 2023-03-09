@@ -7,13 +7,19 @@
 
 
 import CoreData
-class CoreDataMyPosts {
-    private let modelName: String
 
+class CoreDataMyPostsStack {
+    
+    // MARK: - Properties
+    
+    private let modelName: String
+    
+    // MARK: - Initialization
+    
     init(modelName: String) {
         self.modelName = modelName
     }
-
+    
     private lazy var storeContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: self.modelName)
         container.loadPersistentStores { _, error in
@@ -23,10 +29,40 @@ class CoreDataMyPosts {
         }
         return container
     }()
-
+    
     lazy var managedContext: NSManagedObjectContext = self.storeContainer.viewContext
-
- 
+    
+    // MARK: - Core Data stack
+    
+    private lazy var managedObjectModel: NSManagedObjectModel = {
+        guard let modelURL = Bundle.main.url(forResource: self.modelName, withExtension: "momd") else {
+            fatalError("Unable to find data model")
+        }
+        guard let managedObjectModel = NSManagedObjectModel(contentsOf: modelURL) else {
+            fatalError("Unable to load data model")
+        }
+        return managedObjectModel
+    }()
+    
+    private lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator = {
+        let persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
+        let fileManager = FileManager.default
+        let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let storeURL = documentsURL.appendingPathComponent("\(self.modelName).sqlite")
+        
+        do {
+            let options = [NSMigratePersistentStoresAutomaticallyOption: true,
+                                 NSInferMappingModelAutomaticallyOption: true]
+            try persistentStoreCoordinator.addPersistentStore(ofType: NSSQLiteStoreType,
+                                                              configurationName: nil,
+                                                              at: storeURL,
+                                                              options: options)
+        } catch {
+            fatalError("Unable to add persistent store")
+        }
+        
+        return persistentStoreCoordinator
+    }()
     
     func checkIfRecordExists(withID id: Int) -> Bool {
         let fetchRequest: NSFetchRequest<PostsEntity> = PostsEntity.fetchRequest()
@@ -40,36 +76,34 @@ class CoreDataMyPosts {
         }
     }
     
-    
-    
-//    func saveToFavourites(cellViewModel : PostCellViewModel, completion:@escaping((Result<Bool,Error>) ->Void)) {
-    func saveToFavourites(cellViewModel : PostCellViewModel?) {
-        let newFavourite = PostsEntity(context: managedContext)
-        
-        newFavourite.setValue(cellViewModel?.id, forKey: "id")
-        newFavourite.setValue(cellViewModel?.title, forKey: "title")
-        newFavourite.setValue(cellViewModel?.userId, forKey: "userId")
-        newFavourite.setValue(cellViewModel?.body, forKey: "body")
-        do {
-            debugPrint("Data saved")
-            try managedContext.save()
-           // completion(.success(true))
-           
-        } catch let error as NSError {
-            debugPrint("error")
-           
-        }
-    }
-    
     func resetData() {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "PostsEntity")
         let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
         do {
-            // Execute the batch delete request
             try managedContext.execute(batchDeleteRequest)
         } catch let error as NSError {
-            // Handle the error
+            
             print("Could not delete data: \(error)")
         }
     }
+    
+    func saveToFavourites(cellViewModel : PostsDataModel) {
+        let newFavourite = PostsEntity(context: managedContext)
+        newFavourite.setValue(cellViewModel.id, forKey: "id")
+        newFavourite.setValue(cellViewModel.title, forKey: "title")
+        newFavourite.setValue(cellViewModel.userId, forKey: "userId")
+        newFavourite.setValue(cellViewModel.body, forKey: "body")
+        do {
+            debugPrint("Data saved")
+            try managedContext.save()
+        } catch let error as NSError {
+            debugPrint("\(error)")
+        }
+        
+        
+    }
 }
+
+
+
+

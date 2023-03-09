@@ -34,7 +34,7 @@ class BaseViewController: UIViewController {
     }
     
     private func setLogoutButton() {
-        logoutButton.frame = CGRect(x: self.view.frame.width - 55, y: 45, width: 25, height: 25)
+        logoutButton.frame = CGRect(x: self.view.frame.width - 55, y: 45, width: 25, height: 30)
         logoutButton.addTarget(self, action: #selector(logout), for: .touchUpInside)
         self.view.addSubview(logoutButton)
     }

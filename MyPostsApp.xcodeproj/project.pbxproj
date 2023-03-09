@@ -53,7 +53,6 @@
 		356EA7E229B7D0A100F70F81 /* FavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA7E029B7D0A100F70F81 /* FavouritesViewModel.swift */; };
 		356EA7E429B7FB1100F70F81 /* ExtensionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA7E329B7FB1100F70F81 /* ExtensionFile.swift */; };
 		356EA7E529B7FB1100F70F81 /* ExtensionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA7E329B7FB1100F70F81 /* ExtensionFile.swift */; };
-		356EA7E629B7FBFD00F70F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA69029B35B8F00F70F81 /* AppDelegate.swift */; };
 		356EA7E729B7FBFD00F70F81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA69229B35B8F00F70F81 /* SceneDelegate.swift */; };
 		356EA7E929B8AB4300F70F81 /* APIEndPointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA7E829B8AB4300F70F81 /* APIEndPointModel.swift */; };
 		356EA7EA29B8AB4300F70F81 /* APIEndPointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA7E829B8AB4300F70F81 /* APIEndPointModel.swift */; };
@@ -64,6 +63,20 @@
 		356EA7F229B8C00000F70F81 /* PostListviewclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA7F129B8C00000F70F81 /* PostListviewclass.swift */; };
 		356EA7F429B8C01400F70F81 /* FavouritesListClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA7F329B8C01400F70F81 /* FavouritesListClass.swift */; };
 		356EA7F529B8C64E00F70F81 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA6C729B3672800F70F81 /* Posts.swift */; };
+		356EA7F729B8E68D00F70F81 /* FavouriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA7F629B8E68D00F70F81 /* FavouriteRepository.swift */; };
+		356EA7F829B8E68D00F70F81 /* FavouriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA7F629B8E68D00F70F81 /* FavouriteRepository.swift */; };
+		356EA7FA29B9312800F70F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA69029B35B8F00F70F81 /* AppDelegate.swift */; };
+		356EA7FC29BA3CBA00F70F81 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA7FB29BA3CBA00F70F81 /* LoginViewModelTests.swift */; };
+		356EA7FE29BA729A00F70F81 /* CommnetsViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA7FD29BA729A00F70F81 /* CommnetsViewmodel.swift */; };
+		356EA7FF29BA729A00F70F81 /* CommnetsViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA7FD29BA729A00F70F81 /* CommnetsViewmodel.swift */; };
+		356EA80129BA733600F70F81 /* CommnetsNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA80029BA733500F70F81 /* CommnetsNetworkManager.swift */; };
+		356EA80229BA733600F70F81 /* CommnetsNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA80029BA733500F70F81 /* CommnetsNetworkManager.swift */; };
+		356EA80429BA74E300F70F81 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA80329BA74E300F70F81 /* Comments.swift */; };
+		356EA80529BA74E300F70F81 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA80329BA74E300F70F81 /* Comments.swift */; };
+		356EA80729BA800E00F70F81 /* CommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA80629BA800E00F70F81 /* CommentsTableViewCell.swift */; };
+		356EA80829BA800E00F70F81 /* CommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA80629BA800E00F70F81 /* CommentsTableViewCell.swift */; };
+		356EA80A29BA885D00F70F81 /* MyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA80929BA885D00F70F81 /* MyLabel.swift */; };
+		356EA80B29BA885D00F70F81 /* MyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356EA80929BA885D00F70F81 /* MyLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +135,13 @@
 		356EA7EE29B8BB4000F70F81 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		356EA7F129B8C00000F70F81 /* PostListviewclass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListviewclass.swift; sourceTree = "<group>"; };
 		356EA7F329B8C01400F70F81 /* FavouritesListClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesListClass.swift; sourceTree = "<group>"; };
+		356EA7F629B8E68D00F70F81 /* FavouriteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteRepository.swift; sourceTree = "<group>"; };
+		356EA7FB29BA3CBA00F70F81 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		356EA7FD29BA729A00F70F81 /* CommnetsViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommnetsViewmodel.swift; sourceTree = "<group>"; };
+		356EA80029BA733500F70F81 /* CommnetsNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommnetsNetworkManager.swift; sourceTree = "<group>"; };
+		356EA80329BA74E300F70F81 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
+		356EA80629BA800E00F70F81 /* CommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewCell.swift; sourceTree = "<group>"; };
+		356EA80929BA885D00F70F81 /* MyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +208,7 @@
 				356EA6AA29B35B9100F70F81 /* MyPostsAppTests.swift */,
 				356EA7F329B8C01400F70F81 /* FavouritesListClass.swift */,
 				356EA7F129B8C00000F70F81 /* PostListviewclass.swift */,
+				356EA7FB29BA3CBA00F70F81 /* LoginViewModelTests.swift */,
 			);
 			path = MyPostsAppTests;
 			sourceTree = "<group>";
@@ -205,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				356EA7E329B7FB1100F70F81 /* ExtensionFile.swift */,
+				356EA80929BA885D00F70F81 /* MyLabel.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -248,6 +270,7 @@
 				356EA7DA29B7D01800F70F81 /* FavoriteTableViewCell.swift */,
 				356EA7DB29B7D01800F70F81 /* FavoriteTableViewCell.xib */,
 				356EA7E029B7D0A100F70F81 /* FavouritesViewModel.swift */,
+				356EA7F629B8E68D00F70F81 /* FavouriteRepository.swift */,
 			);
 			path = Favourites;
 			sourceTree = "<group>";
@@ -282,6 +305,10 @@
 			isa = PBXGroup;
 			children = (
 				356EA7B729B5ED5F00F70F81 /* CommentsViewController.swift */,
+				356EA7FD29BA729A00F70F81 /* CommnetsViewmodel.swift */,
+				356EA80029BA733500F70F81 /* CommnetsNetworkManager.swift */,
+				356EA80329BA74E300F70F81 /* Comments.swift */,
+				356EA80629BA800E00F70F81 /* CommentsTableViewCell.swift */,
 			);
 			path = Comments;
 			sourceTree = "<group>";
@@ -435,13 +462,18 @@
 				356EA7E129B7D0A100F70F81 /* FavouritesViewModel.swift in Sources */,
 				356EA7EC29B8B03300F70F81 /* LoginNetworkManager.swift in Sources */,
 				356EA79E29B5019A00F70F81 /* PostViewModel.swift in Sources */,
+				356EA80429BA74E300F70F81 /* Comments.swift in Sources */,
 				356EA7A129B502CB00F70F81 /* PostsNetworkManager.swift in Sources */,
 				356EA7E429B7FB1100F70F81 /* ExtensionFile.swift in Sources */,
+				356EA80129BA733600F70F81 /* CommnetsNetworkManager.swift in Sources */,
 				356EA7A829B5067E00F70F81 /* PostTableViewCell.swift in Sources */,
+				356EA7F729B8E68D00F70F81 /* FavouriteRepository.swift in Sources */,
 				356EA7DC29B7D01800F70F81 /* FavoriteTableViewCell.swift in Sources */,
+				356EA7FE29BA729A00F70F81 /* CommnetsViewmodel.swift in Sources */,
 				356EA7BE29B679D600F70F81 /*  CoreDataMyPosts.swift in Sources */,
 				356EA7B829B5ED5F00F70F81 /* CommentsViewController.swift in Sources */,
 				356EA79529B3EA3100F70F81 /* LoginViewController.swift in Sources */,
+				356EA80729BA800E00F70F81 /* CommentsTableViewCell.swift in Sources */,
 				356EA6CE29B367E000F70F81 /* PostsViewController.swift in Sources */,
 				356EA69129B35B8F00F70F81 /* AppDelegate.swift in Sources */,
 				356EA7D229B756EB00F70F81 /* PostsEntity+CoreDataProperties.swift in Sources */,
@@ -453,6 +485,7 @@
 				356EA7D029B756EB00F70F81 /* PostsEntity+CoreDataClass.swift in Sources */,
 				356EA79829B3EA4B00F70F81 /* LoginViewModel.swift in Sources */,
 				356EA7B529B5ECBC00F70F81 /* BaseViewController.swift in Sources */,
+				356EA80A29BA885D00F70F81 /* MyLabel.swift in Sources */,
 				356EA79B29B3EA7B00F70F81 /* TabBarViewModel.swift in Sources */,
 				356EA69B29B35B8F00F70F81 /* MyPostsApp.xcdatamodeld in Sources */,
 				356EA7EF29B8BB4000F70F81 /* Constants.swift in Sources */,
@@ -469,7 +502,12 @@
 				356EA7F229B8C00000F70F81 /* PostListviewclass.swift in Sources */,
 				356EA7F429B8C01400F70F81 /* FavouritesListClass.swift in Sources */,
 				356EA7B929B5ED5F00F70F81 /* CommentsViewController.swift in Sources */,
+				356EA80229BA733600F70F81 /* CommnetsNetworkManager.swift in Sources */,
+				356EA80829BA800E00F70F81 /* CommentsTableViewCell.swift in Sources */,
+				356EA7F829B8E68D00F70F81 /* FavouriteRepository.swift in Sources */,
 				356EA7D129B756EB00F70F81 /* PostsEntity+CoreDataClass.swift in Sources */,
+				356EA7FA29B9312800F70F81 /* AppDelegate.swift in Sources */,
+				356EA80B29BA885D00F70F81 /* MyLabel.swift in Sources */,
 				356EA7F529B8C64E00F70F81 /* Posts.swift in Sources */,
 				356EA7E229B7D0A100F70F81 /* FavouritesViewModel.swift in Sources */,
 				356EA7DD29B7D01800F70F81 /* FavoriteTableViewCell.swift in Sources */,
@@ -477,15 +515,17 @@
 				356EA79629B3EA3100F70F81 /* LoginViewController.swift in Sources */,
 				356EA7A229B502CB00F70F81 /* PostsNetworkManager.swift in Sources */,
 				356EA7B629B5ECBC00F70F81 /* BaseViewController.swift in Sources */,
+				356EA7FC29BA3CBA00F70F81 /* LoginViewModelTests.swift in Sources */,
 				356EA7F029B8BB4000F70F81 /* Constants.swift in Sources */,
 				356EA7E729B7FBFD00F70F81 /* SceneDelegate.swift in Sources */,
 				356EA7E529B7FB1100F70F81 /* ExtensionFile.swift in Sources */,
 				356EA79229B3EA0100F70F81 /* WindowCoordinator.swift in Sources */,
 				356EA7ED29B8B03300F70F81 /* LoginNetworkManager.swift in Sources */,
 				356EA7D329B756EB00F70F81 /* PostsEntity+CoreDataProperties.swift in Sources */,
+				356EA80529BA74E300F70F81 /* Comments.swift in Sources */,
 				356EA6AB29B35B9100F70F81 /* MyPostsAppTests.swift in Sources */,
-				356EA7E629B7FBFD00F70F81 /* AppDelegate.swift in Sources */,
 				356EA7A929B5067E00F70F81 /* PostTableViewCell.swift in Sources */,
+				356EA7FF29BA729A00F70F81 /* CommnetsViewmodel.swift in Sources */,
 				356EA7EA29B8AB4300F70F81 /* APIEndPointModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

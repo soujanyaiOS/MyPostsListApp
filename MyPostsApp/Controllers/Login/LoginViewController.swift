@@ -16,31 +16,30 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initViewModel()
         bindUI()
         AppDelegate.sharedAppDelegate.coreDataStack.resetData()
+        
     }
     
     private func bindUI() {
+        userIdTextfield.addTarget(self, action: #selector(emailTextFieldDidChange(_:)), for: .editingChanged)
+        loginButton.isEnabled = viewModel.isLoginEnabled
         loginButton.addTarget(self, action: #selector(loginButtonTapped(_:)), for: .touchUpInside)
     }
     
-    func initViewModel() {
-        
-        viewModel.reloadView = {[weak self] in
-            DispatchQueue.main.async {
-                self?.UpdateUIforLogin(post: self?.viewModel.posts.count ?? 0)
+    @objc private func loginButtonTapped(_ button: UIButton) {
+        viewModel.loginAPI(userID: userIdTextfield.text ?? "0"){ [weak self] data in
+            switch data {
+            case .success(let post) :
+                DispatchQueue.main.async {
+                    self?.UpdateUIforLogin(post: post.count )
+                }
+                
+            case .failure( _):
+                self?.showAlert(title: Constants.errorTitle, message: Constants.InvalidUser)
+                
             }
         }
-        
-        viewModel.errorHandler = { [weak self] _ in
-            self?.showAlert(title: Constants.errorTitle, message: Constants.InvalidUser)
-        }
-    }
-    
-    
-    @objc private func loginButtonTapped(_ button: UIButton) {
-        viewModel.loginAPI(userID: userIdTextfield.text ?? "0")
     }
     
     func UpdateUIforLogin(post: Int) {
@@ -59,4 +58,11 @@ class LoginViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    @objc private func emailTextFieldDidChange(_ textField: UITextField) {
+        viewModel.userID = textField.text ?? ""
+        loginButton.isEnabled = viewModel.isLoginEnabled
+    }
+    
 }
+
+

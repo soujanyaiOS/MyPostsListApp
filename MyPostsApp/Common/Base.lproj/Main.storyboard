@@ -117,7 +117,7 @@
                             <constraint firstItem="HYO-mM-BCv" firstAttribute="trailing" secondItem="RnT-Ov-tqT" secondAttribute="trailing" id="mMz-VX-qP7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="8kA-hw-uyu"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="list.dash" catalog="system" id="8kA-hw-uyu"/>
                     <connections>
                         <outlet property="ListTableView" destination="HYO-mM-BCv" id="lPy-vj-Evs"/>
                     </connections>
@@ -206,6 +206,7 @@
     </scenes>
     <resources>
         <image name="AppBgimage" width="1080" height="1920"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

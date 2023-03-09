@@ -59,6 +59,7 @@ extension PostsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vcs = storyboard.instantiateViewController(withIdentifier: "CommentsViewController") as! CommentsViewController
+        vcs.post = viewModel.posts[indexPath.row]
         self.present(vcs, animated: false, completion: nil)
         
     }

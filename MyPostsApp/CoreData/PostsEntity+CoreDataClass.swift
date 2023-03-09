@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(PostsEntity)
-public class PostsEntity: NSManagedObject {
+public final class PostsEntity: NSManagedObject {
 
 }

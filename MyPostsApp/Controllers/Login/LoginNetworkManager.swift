@@ -13,9 +13,6 @@ protocol  LoginNetworkManagerProtocal {
 }
 
 class LoginNetworkManager:  LoginNetworkManagerProtocal {
-    
-    
-    
     func login(userId: String, completion: @escaping (Result<[Post], Error>) -> Void) {
         let endpoint = APIEndpoint.login(userId: userId)
         var request = URLRequest(url: endpoint.url)

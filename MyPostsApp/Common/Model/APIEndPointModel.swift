@@ -10,6 +10,7 @@ import Foundation
 enum APIEndpoint {
     case login(userId: String)
     case getPosts(userId: Int)
+    case getComments(postID: Int)
     
     var url: URL {
         switch self {
@@ -20,6 +21,12 @@ enum APIEndpoint {
         case .getPosts(let userId):
             let urlString = "https://jsonplaceholder.typicode.com/posts?userId=\(userId)"
             return URL(string: urlString)!
+            
+        case .getComments(let postId):
+            let urlString = "https://jsonplaceholder.typicode.com/posts/\(postId)/comments"
+            return URL(string: urlString)!
+            
+            
         }
     }
     
@@ -29,6 +36,8 @@ enum APIEndpoint {
             return "GET"
             
         case .getPosts:
+            return "GET"
+        case .getComments:
             return "GET"
         }
     }

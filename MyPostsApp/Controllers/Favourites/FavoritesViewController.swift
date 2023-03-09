@@ -59,11 +59,6 @@ extension FavoritesViewController: UITableViewDelegate, UITableViewDataSource {
         
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewController: CommentsViewController = UIStoryboard.instantiateViewController(withIdentifier: "CommentsViewController") as! CommentsViewController
-        self.present(viewController, animated: false, completion: nil)
-    }
-    
 }
 
 

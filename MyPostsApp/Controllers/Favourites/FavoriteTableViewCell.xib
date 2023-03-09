@@ -17,16 +17,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="7Df-sI-RtV">
-                        <rect key="frame" x="1" y="10" width="318" height="146"/>
+                        <rect key="frame" x="1" y="10" width="314" height="146"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRd-mw-8BE">
-                                <rect key="frame" x="0.0" y="0.0" width="318" height="18"/>
+                                <rect key="frame" x="0.0" y="0.0" width="314" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <color key="textColor" red="0.093260757625102997" green="0.40170907974243164" blue="0.64263993501663208" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqj-K6-Udo">
-                                <rect key="frame" x="0.0" y="66" width="318" height="80"/>
+                                <rect key="frame" x="0.0" y="66" width="314" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="sl3-Gv-b5N"/>
                                 </constraints>
@@ -40,7 +40,7 @@
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="7Df-sI-RtV" secondAttribute="trailing" constant="1" id="IXO-2J-28U"/>
+                    <constraint firstAttribute="trailing" secondItem="7Df-sI-RtV" secondAttribute="trailing" constant="5" id="IXO-2J-28U"/>
                     <constraint firstAttribute="bottom" secondItem="7Df-sI-RtV" secondAttribute="bottom" constant="5" id="VJZ-oL-QAj"/>
                     <constraint firstItem="7Df-sI-RtV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="1" id="ce6-IL-gIh"/>
                     <constraint firstItem="7Df-sI-RtV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ld7-U2-7FX"/>
