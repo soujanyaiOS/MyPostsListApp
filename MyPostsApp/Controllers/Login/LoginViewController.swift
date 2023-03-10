@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var userIdTextfield: UITextField!
@@ -36,8 +37,7 @@ class LoginViewController: UIViewController {
                 }
                 
             case .failure( _):
-                self?.showAlert(title: Constants.errorTitle, message: Constants.InvalidUser)
-                
+                Constants.showToastMessage(Constants.InvalidUser)
             }
         }
     }
@@ -48,14 +48,8 @@ class LoginViewController: UIViewController {
             sceneDelegate.windowCoordinator.presentTabBarController()
         }
         else{
-            showAlert(title: "", message: Constants.noDataAvailable)
+            Constants.showToastMessage(Constants.noDataAvailable)
         }
-    }
-    
-    func showAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
     }
     
     @objc private func emailTextFieldDidChange(_ textField: UITextField) {

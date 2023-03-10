@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-MyPostsApp/Pods-MyPostsApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SwiftLoader/SwiftLoader.framework
+${BUILT_PRODUCTS_DIR}/ToastViewSwift/ToastViewSwift.framework

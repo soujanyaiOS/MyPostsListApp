@@ -16,6 +16,10 @@ extension UIStoryboard {
 enum ButtonImage {
     case logout
     case disabled
+    case listTab
+    case favouritesTab
+    case starred
+    case unStar
     
     var image: UIImage? {
         switch self {
@@ -24,6 +28,18 @@ enum ButtonImage {
             
         case .disabled:
             return UIImage(named: "disabledImageName")
+            
+        case .listTab:
+          return   UIImage(systemName: "list.dash")
+            
+        case .favouritesTab:
+            return UIImage(systemName: "heart.fill")
+            
+        case .starred :
+           return UIImage(systemName: "star")
+            
+        case .unStar :
+           return UIImage(systemName: "star.fill")
         }
     }
 }

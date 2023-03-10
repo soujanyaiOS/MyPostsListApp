@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftLoader
 
 class MockPostApiService: PostsNetworkManagerProtocal {
 
@@ -27,13 +28,14 @@ protocol  PostsNetworkManagerProtocal {
 class PostsNetworkManager:  PostsNetworkManagerProtocal {
     
     func getPost(userId: Int, completion: @escaping (Result<[Post], Error>) -> Void) {
+        SwiftLoader.show(animated: true)
         let endpoint = APIEndpoint.getPosts(userId: userId)
-        
         var request = URLRequest(url: endpoint.url)
         request.httpMethod = endpoint.httpMethod
         request.allHTTPHeaderFields = endpoint.headers
         
         URLSession.shared.dataTask(with: request) { (data, response, error) in
+            SwiftLoader.hide()
             if let error = error {
                 completion(.failure(error))
             }

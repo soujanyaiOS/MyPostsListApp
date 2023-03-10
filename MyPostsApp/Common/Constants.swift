@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ToastViewSwift
 
 class Constants {
     static let InvalidUser = "Invalid User Id"
@@ -15,4 +16,15 @@ class Constants {
     static let MyPostTitle = "My Posts"
     static let Comments = "Comments"
     static let XibError = "xib does not exists"
+    static let ALLTab = "ALL"
+    static let FavouriteTab = "Favourites"
+    static let RecordExistsFavourites = "Record already added to favourites"
+    static let savedToFavourites = "Saved to favourites"
+    static let noFavDataAvailable = "No favourites Saved"
+    static let logoutMessage = "Logged out Successfully"
+    
+    static func showToastMessage(_ message: String) {
+        let toast = Toast.text(message)
+        toast.show()
+    }
 }

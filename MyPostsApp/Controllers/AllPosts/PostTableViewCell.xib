@@ -18,13 +18,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B93-SI-9e4">
-                        <rect key="frame" x="0.0" y="10" width="264" height="54"/>
+                        <rect key="frame" x="10" y="10" width="264" height="54"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                         <color key="textColor" red="0.093260757625102997" green="0.40170907974243164" blue="0.64263993501663208" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfC-si-K9C">
-                        <rect key="frame" x="0.0" y="72" width="304" height="80"/>
+                        <rect key="frame" x="10" y="72" width="304" height="80"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="80" id="qcR-wv-9bn"/>
                         </constraints>
@@ -46,15 +46,15 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ntl-g0-wrA" firstAttribute="leading" secondItem="B93-SI-9e4" secondAttribute="trailing" constant="1" id="5YQ-3Z-Oka"/>
+                    <constraint firstItem="ntl-g0-wrA" firstAttribute="leading" secondItem="B93-SI-9e4" secondAttribute="trailing" constant="-9" id="5YQ-3Z-Oka"/>
                     <constraint firstItem="ntl-g0-wrA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="6G2-V6-1ko"/>
                     <constraint firstAttribute="trailing" secondItem="ntl-g0-wrA" secondAttribute="trailing" id="78D-gH-m0T"/>
-                    <constraint firstItem="QfC-si-K9C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QYU-m5-Rpm"/>
+                    <constraint firstItem="QfC-si-K9C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="QYU-m5-Rpm"/>
                     <constraint firstItem="B93-SI-9e4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fJA-a6-t8p"/>
                     <constraint firstItem="QfC-si-K9C" firstAttribute="top" secondItem="B93-SI-9e4" secondAttribute="bottom" constant="8" id="lRe-do-yDW"/>
-                    <constraint firstItem="B93-SI-9e4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tFE-Xy-s7k"/>
+                    <constraint firstItem="B93-SI-9e4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="tFE-Xy-s7k"/>
                     <constraint firstAttribute="bottom" secondItem="QfC-si-K9C" secondAttribute="bottom" constant="9" id="tek-Rp-PBn"/>
-                    <constraint firstAttribute="trailing" secondItem="QfC-si-K9C" secondAttribute="trailing" constant="16" id="w9K-HR-rr7"/>
+                    <constraint firstAttribute="trailing" secondItem="QfC-si-K9C" secondAttribute="trailing" constant="6" id="w9K-HR-rr7"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

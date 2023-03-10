@@ -1,0 +1,1193 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01F03C2EB2BE7C135072EE57C658ED39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		042FBD8A640B1B6717502E459B3F7A89 /* Pods-MyPostsAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6E61C647C4DBF773D4EF3221484026 /* Pods-MyPostsAppTests-dummy.m */; };
+		2AEA25F27A806B40033934223838F1BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		3385BC41BADDB93B2CF66693E5A0BAA1 /* ToastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE4FA6079A3CA56B55BA92592B78F28 /* ToastDelegate.swift */; };
+		35275B6D33450B4FFCDDCD4885071EDA /* TextAppleToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAC8FC7EA6EDC2C49389898883F39B0 /* TextAppleToastView.swift */; };
+		39A9EF38BD63FA4F9C1F58A88BA42748 /* Pods-MyPostsAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D748C9863201480A517725298B728F5B /* Pods-MyPostsAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EEAB57F6F5ED763589DB6BED56BB7D /* IconAppleToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D56D615B35161EDF3FCA692FF4E9DB /* IconAppleToastView.swift */; };
+		4A883C341ADC6FC21AB61CC408C432BB /* Pods-MyPostsApp-MyPostsAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BC600DF374A6BC9FF42C0516D11D701 /* Pods-MyPostsApp-MyPostsAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DA7B715B5126C4F918E99872F45DB38 /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB7E243CDEED55EE6BD0CA984F8BF95 /* SwiftLoader.swift */; };
+		5AFC42C707BCAD3D502A1AD13868BFA5 /* ToastViewSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE6DEBA109904D039A865D415B9466 /* ToastViewSwift-dummy.m */; };
+		5DB6A629AE48EC0FBF3246C267E8E16E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		622F3C87EC992C7E9AC2F2D0DCDC025D /* ToastViewSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D24563FAF4EE036200CC79980C5DB442 /* ToastViewSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6714C7D157F03F808B4425AE2608C06E /* SwiftLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD70E3DAFD3D3B89040F2619C718EFC /* SwiftLoader-dummy.m */; };
+		6DE9D371ACE17126C63F5BF8BC94C67F /* Pods-MyPostsApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0C74EE3589D7B894CF49BAF5C902E3 /* Pods-MyPostsApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74398F1334E59F53097F608CA5F1FBA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		7C48C10B6255058B305BB8570CE55CB3 /* Pods-MyPostsApp-MyPostsAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 100F452B50D69BEBB05D468378E6E788 /* Pods-MyPostsApp-MyPostsAppUITests-dummy.m */; };
+		7E355A43A1CE3EC1D232C148D17D709B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		86B6BB4EA7E0C2478219F5B139241646 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A82118129C618E18C60A14506C38370 /* ToastView.swift */; };
+		D05C6E944EEBB1EB01182C0C3A44B05E /* SwiftLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7EB71D08B6E61B9995DA5BD4340E912 /* SwiftLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4FA47A4BB9A9B1AB3A9EB4F47F08EA6 /* Pods-MyPostsApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D20D5476F5E9DB52604971F3E1AAED /* Pods-MyPostsApp-dummy.m */; };
+		E61C06F39C4E78660E853ED3AC115D62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		EC895033F49526BB4EB8138503B39DAD /* ToastConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0876566D3D0FCA1EB6AAB0814E7F2DED /* ToastConfiguration.swift */; };
+		EED589CB9492BCEEAB72B224040BCC7B /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862D76664E96152485D92BE6757C7C60 /* Toast.swift */; };
+		F70FEC3F22C89D17F31E0FDE3EA30D2F /* AppleToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C5CF06D2FE551E6B6E3CA97B2C19C /* AppleToastView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39832E78164B1BEB1093E192053E8E4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5A4A524995EFC7B90254E4FB975E5BD;
+			remoteInfo = ToastViewSwift;
+		};
+		3B7158C49BC231B2B64D08288213B1C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AAC147747C133B0D1A58FCF1E8D1FA3;
+			remoteInfo = SwiftLoader;
+		};
+		465D565D0EE0534857A10B0A14C786ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AAC147747C133B0D1A58FCF1E8D1FA3;
+			remoteInfo = SwiftLoader;
+		};
+		CB32EB3A4FADACF57EB1FED745594C22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5A4A524995EFC7B90254E4FB975E5BD;
+			remoteInfo = ToastViewSwift;
+		};
+		F5EF7569FD30238CC2F3437327AE6389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F1155D450E5A6E7F6E6487F5D9084B5;
+			remoteInfo = "Pods-MyPostsApp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		056C7A9D9C0325729B9672702721B33C /* Pods-MyPostsApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyPostsApp-frameworks.sh"; sourceTree = "<group>"; };
+		0876566D3D0FCA1EB6AAB0814E7F2DED /* ToastConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastConfiguration.swift; path = Sources/Toast/ToastConfiguration.swift; sourceTree = "<group>"; };
+		0B67460CA53B6842A1B4C5A4BB3B4A3B /* Pods-MyPostsApp-MyPostsAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyPostsApp-MyPostsAppUITests.modulemap"; sourceTree = "<group>"; };
+		0BC600DF374A6BC9FF42C0516D11D701 /* Pods-MyPostsApp-MyPostsAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyPostsApp-MyPostsAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		100F452B50D69BEBB05D468378E6E788 /* Pods-MyPostsApp-MyPostsAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyPostsApp-MyPostsAppUITests-dummy.m"; sourceTree = "<group>"; };
+		16EC6AB4D44ED922FECB0545DC26F53F /* Pods-MyPostsApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyPostsApp.modulemap"; sourceTree = "<group>"; };
+		178F169F6A30DDDA2EC7B8314F504902 /* SwiftLoader-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftLoader-Info.plist"; sourceTree = "<group>"; };
+		1C6E61C647C4DBF773D4EF3221484026 /* Pods-MyPostsAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyPostsAppTests-dummy.m"; sourceTree = "<group>"; };
+		214620A21DFEC0B72CA08443EA5200C9 /* Pods-MyPostsAppTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MyPostsAppTests"; path = Pods_MyPostsAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A0C74EE3589D7B894CF49BAF5C902E3 /* Pods-MyPostsApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyPostsApp-umbrella.h"; sourceTree = "<group>"; };
+		2FBE6DEBA109904D039A865D415B9466 /* ToastViewSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ToastViewSwift-dummy.m"; sourceTree = "<group>"; };
+		3A20713BFA29DBBB43B52A1DFC9E4B07 /* Pods-MyPostsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyPostsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3F3C5CF06D2FE551E6B6E3CA97B2C19C /* AppleToastView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleToastView.swift; path = Sources/Toast/ToastViews/AppleToastView/AppleToastView.swift; sourceTree = "<group>"; };
+		4967B93ED4979CFF7B4AC07AB2AD132C /* Pods-MyPostsApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyPostsApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4A1BDE19095D5A124BCAD17344561D8B /* Pods-MyPostsApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyPostsApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		526AF31465BD6002C14AE1FF8B2E8733 /* SwiftLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftLoader.modulemap; sourceTree = "<group>"; };
+		5AAB1E806FEF6AD885B21922223CD7EE /* Pods-MyPostsApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MyPostsApp"; path = Pods_MyPostsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DB22E82AB859E8F2E1D683AA8544C7B /* SwiftLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLoader-prefix.pch"; sourceTree = "<group>"; };
+		5F44FE20D0C813654284402F599D06B8 /* Pods-MyPostsApp-MyPostsAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyPostsApp-MyPostsAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A82118129C618E18C60A14506C38370 /* ToastView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastView.swift; path = Sources/Toast/ToastViews/ToastView.swift; sourceTree = "<group>"; };
+		72D23A84FF16307EF2EB2722C25D0D21 /* SwiftLoader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLoader.release.xcconfig; sourceTree = "<group>"; };
+		75D56D615B35161EDF3FCA692FF4E9DB /* IconAppleToastView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IconAppleToastView.swift; path = Sources/Toast/ToastViews/AppleToastView/IconAppleToastView.swift; sourceTree = "<group>"; };
+		7AEF06E5F3AE860CA5D2977B3712A8AA /* Pods-MyPostsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyPostsApp.release.xcconfig"; sourceTree = "<group>"; };
+		7FD70E3DAFD3D3B89040F2619C718EFC /* SwiftLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftLoader-dummy.m"; sourceTree = "<group>"; };
+		862D76664E96152485D92BE6757C7C60 /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Sources/Toast/Toast.swift; sourceTree = "<group>"; };
+		86D5F36A2C04AC8C2E87724695DF5460 /* ToastViewSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ToastViewSwift.modulemap; sourceTree = "<group>"; };
+		8A5A7B71A4C668573D677C3B9FE821B3 /* Pods-MyPostsAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyPostsAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8AE4FA6079A3CA56B55BA92592B78F28 /* ToastDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastDelegate.swift; path = Sources/Toast/ToastDelegate.swift; sourceTree = "<group>"; };
+		8DAC8FC7EA6EDC2C49389898883F39B0 /* TextAppleToastView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextAppleToastView.swift; path = Sources/Toast/ToastViews/AppleToastView/TextAppleToastView.swift; sourceTree = "<group>"; };
+		93729887D3F7B6641FCFD63EDE706772 /* SwiftLoader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLoader.debug.xcconfig; sourceTree = "<group>"; };
+		96EADBFE8AA29B0D9EC71EAB857A0F4A /* Pods-MyPostsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyPostsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D816BF9FC898C69D1321AEB9F53598C /* Pods-MyPostsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyPostsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FB7E243CDEED55EE6BD0CA984F8BF95 /* SwiftLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftLoader.swift; path = src/SwiftLoader/SwiftLoader.swift; sourceTree = "<group>"; };
+		A2D20D5476F5E9DB52604971F3E1AAED /* Pods-MyPostsApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyPostsApp-dummy.m"; sourceTree = "<group>"; };
+		A7EB71D08B6E61B9995DA5BD4340E912 /* SwiftLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLoader-umbrella.h"; sourceTree = "<group>"; };
+		ABAB77FE05232706D745D9A15DD13DDE /* Pods-MyPostsApp-MyPostsAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyPostsApp-MyPostsAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B3005CEBDC91E49CA0ECFB0B6445C7B8 /* ToastViewSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ToastViewSwift-prefix.pch"; sourceTree = "<group>"; };
+		B48EACEDD597C878292058F97249AF76 /* Pods-MyPostsApp-MyPostsAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyPostsApp-MyPostsAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		B6ECE7B3EBA72B936B83AFC52E662F42 /* Pods-MyPostsApp-MyPostsAppUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MyPostsApp-MyPostsAppUITests"; path = Pods_MyPostsApp_MyPostsAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC33734F30182EA6AB9C19734C058BC0 /* ToastViewSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ToastViewSwift.release.xcconfig; sourceTree = "<group>"; };
+		BD16DE0A05E1B46CA919033875AE2799 /* Pods-MyPostsApp-MyPostsAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyPostsApp-MyPostsAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CB6C7D4B51E232E5A89E82040FD01E77 /* ToastViewSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ToastViewSwift; path = ToastViewSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD16625DA04E88561EF0CF55CA3ABAB2 /* Pods-MyPostsApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyPostsApp-Info.plist"; sourceTree = "<group>"; };
+		CE55E194ECC4481838C511546648961C /* Pods-MyPostsAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyPostsAppTests-Info.plist"; sourceTree = "<group>"; };
+		CF347FB4633719DA98CC064E9EE9CB44 /* Pods-MyPostsAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyPostsAppTests.modulemap"; sourceTree = "<group>"; };
+		D24563FAF4EE036200CC79980C5DB442 /* ToastViewSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ToastViewSwift-umbrella.h"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D748C9863201480A517725298B728F5B /* Pods-MyPostsAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyPostsAppTests-umbrella.h"; sourceTree = "<group>"; };
+		E212AD166E085C5E3DE6EACC79B60685 /* Pods-MyPostsApp-MyPostsAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyPostsApp-MyPostsAppUITests-Info.plist"; sourceTree = "<group>"; };
+		E94CAE7863796E271B0A406B80990A66 /* Pods-MyPostsApp-MyPostsAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyPostsApp-MyPostsAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EA6545A607DD5C55DF16814274666406 /* ToastViewSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ToastViewSwift-Info.plist"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F95953D942C279A34CED5696F48E5839 /* SwiftLoader */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftLoader; path = SwiftLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB2AF91BE2E3E0438A71EB2529F2481A /* ToastViewSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ToastViewSwift.debug.xcconfig; sourceTree = "<group>"; };
+		FB8818D4C5132F486A809D7543F4C2B8 /* Pods-MyPostsAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyPostsAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F8F74779DDF33E0945165DE7810EB28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB6A629AE48EC0FBF3246C267E8E16E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418B91272150A41EF5263D9AA9F9528D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74398F1334E59F53097F608CA5F1FBA1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63FA48713CC23A860B2B670978D1A08B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AEA25F27A806B40033934223838F1BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938596850EE84E81BAB7C5176BC0FEB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E61C06F39C4E78660E853ED3AC115D62 /* Foundation.framework in Frameworks */,
+				01F03C2EB2BE7C135072EE57C658ED39 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8EAC4905C0200739D72D63077B977C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E355A43A1CE3EC1D232C148D17D709B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C14CCDB04B2FEEEC6DD429215093DB9 /* Pods-MyPostsApp-MyPostsAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B67460CA53B6842A1B4C5A4BB3B4A3B /* Pods-MyPostsApp-MyPostsAppUITests.modulemap */,
+				BD16DE0A05E1B46CA919033875AE2799 /* Pods-MyPostsApp-MyPostsAppUITests-acknowledgements.markdown */,
+				E94CAE7863796E271B0A406B80990A66 /* Pods-MyPostsApp-MyPostsAppUITests-acknowledgements.plist */,
+				100F452B50D69BEBB05D468378E6E788 /* Pods-MyPostsApp-MyPostsAppUITests-dummy.m */,
+				B48EACEDD597C878292058F97249AF76 /* Pods-MyPostsApp-MyPostsAppUITests-frameworks.sh */,
+				E212AD166E085C5E3DE6EACC79B60685 /* Pods-MyPostsApp-MyPostsAppUITests-Info.plist */,
+				0BC600DF374A6BC9FF42C0516D11D701 /* Pods-MyPostsApp-MyPostsAppUITests-umbrella.h */,
+				5F44FE20D0C813654284402F599D06B8 /* Pods-MyPostsApp-MyPostsAppUITests.debug.xcconfig */,
+				ABAB77FE05232706D745D9A15DD13DDE /* Pods-MyPostsApp-MyPostsAppUITests.release.xcconfig */,
+			);
+			name = "Pods-MyPostsApp-MyPostsAppUITests";
+			path = "Target Support Files/Pods-MyPostsApp-MyPostsAppUITests";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C3B432E2634AFD1F0BD8F0CECC40C63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AAB1E806FEF6AD885B21922223CD7EE /* Pods-MyPostsApp */,
+				B6ECE7B3EBA72B936B83AFC52E662F42 /* Pods-MyPostsApp-MyPostsAppUITests */,
+				214620A21DFEC0B72CA08443EA5200C9 /* Pods-MyPostsAppTests */,
+				F95953D942C279A34CED5696F48E5839 /* SwiftLoader */,
+				CB6C7D4B51E232E5A89E82040FD01E77 /* ToastViewSwift */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27CC1981A448721A4E9E519A200EEA27 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2896677DB904ED3CA72C84C0AA96A88C /* Pods-MyPostsApp */,
+				0C14CCDB04B2FEEEC6DD429215093DB9 /* Pods-MyPostsApp-MyPostsAppUITests */,
+				9D1595210D78A25533A63BD85E02314F /* Pods-MyPostsAppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2896677DB904ED3CA72C84C0AA96A88C /* Pods-MyPostsApp */ = {
+			isa = PBXGroup;
+			children = (
+				16EC6AB4D44ED922FECB0545DC26F53F /* Pods-MyPostsApp.modulemap */,
+				4967B93ED4979CFF7B4AC07AB2AD132C /* Pods-MyPostsApp-acknowledgements.markdown */,
+				4A1BDE19095D5A124BCAD17344561D8B /* Pods-MyPostsApp-acknowledgements.plist */,
+				A2D20D5476F5E9DB52604971F3E1AAED /* Pods-MyPostsApp-dummy.m */,
+				056C7A9D9C0325729B9672702721B33C /* Pods-MyPostsApp-frameworks.sh */,
+				CD16625DA04E88561EF0CF55CA3ABAB2 /* Pods-MyPostsApp-Info.plist */,
+				2A0C74EE3589D7B894CF49BAF5C902E3 /* Pods-MyPostsApp-umbrella.h */,
+				3A20713BFA29DBBB43B52A1DFC9E4B07 /* Pods-MyPostsApp.debug.xcconfig */,
+				7AEF06E5F3AE860CA5D2977B3712A8AA /* Pods-MyPostsApp.release.xcconfig */,
+			);
+			name = "Pods-MyPostsApp";
+			path = "Target Support Files/Pods-MyPostsApp";
+			sourceTree = "<group>";
+		};
+		5211C5953753FA40D429ACCAF4466F52 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				526AF31465BD6002C14AE1FF8B2E8733 /* SwiftLoader.modulemap */,
+				7FD70E3DAFD3D3B89040F2619C718EFC /* SwiftLoader-dummy.m */,
+				178F169F6A30DDDA2EC7B8314F504902 /* SwiftLoader-Info.plist */,
+				5DB22E82AB859E8F2E1D683AA8544C7B /* SwiftLoader-prefix.pch */,
+				A7EB71D08B6E61B9995DA5BD4340E912 /* SwiftLoader-umbrella.h */,
+				93729887D3F7B6641FCFD63EDE706772 /* SwiftLoader.debug.xcconfig */,
+				72D23A84FF16307EF2EB2722C25D0D21 /* SwiftLoader.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLoader";
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		79C9D54FBAD9675C238866A4D38F91A8 /* ToastViewSwift */ = {
+			isa = PBXGroup;
+			children = (
+				3F3C5CF06D2FE551E6B6E3CA97B2C19C /* AppleToastView.swift */,
+				75D56D615B35161EDF3FCA692FF4E9DB /* IconAppleToastView.swift */,
+				8DAC8FC7EA6EDC2C49389898883F39B0 /* TextAppleToastView.swift */,
+				862D76664E96152485D92BE6757C7C60 /* Toast.swift */,
+				0876566D3D0FCA1EB6AAB0814E7F2DED /* ToastConfiguration.swift */,
+				8AE4FA6079A3CA56B55BA92592B78F28 /* ToastDelegate.swift */,
+				6A82118129C618E18C60A14506C38370 /* ToastView.swift */,
+				A76A1EF2E6BE71B3B7AC8C948C2761E7 /* Support Files */,
+			);
+			name = ToastViewSwift;
+			path = ToastViewSwift;
+			sourceTree = "<group>";
+		};
+		8EA8F29F5E48B42BA14574368116F703 /* SwiftLoader */ = {
+			isa = PBXGroup;
+			children = (
+				9FB7E243CDEED55EE6BD0CA984F8BF95 /* SwiftLoader.swift */,
+				5211C5953753FA40D429ACCAF4466F52 /* Support Files */,
+			);
+			name = SwiftLoader;
+			path = SwiftLoader;
+			sourceTree = "<group>";
+		};
+		9D1595210D78A25533A63BD85E02314F /* Pods-MyPostsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF347FB4633719DA98CC064E9EE9CB44 /* Pods-MyPostsAppTests.modulemap */,
+				8A5A7B71A4C668573D677C3B9FE821B3 /* Pods-MyPostsAppTests-acknowledgements.markdown */,
+				FB8818D4C5132F486A809D7543F4C2B8 /* Pods-MyPostsAppTests-acknowledgements.plist */,
+				1C6E61C647C4DBF773D4EF3221484026 /* Pods-MyPostsAppTests-dummy.m */,
+				CE55E194ECC4481838C511546648961C /* Pods-MyPostsAppTests-Info.plist */,
+				D748C9863201480A517725298B728F5B /* Pods-MyPostsAppTests-umbrella.h */,
+				96EADBFE8AA29B0D9EC71EAB857A0F4A /* Pods-MyPostsAppTests.debug.xcconfig */,
+				9D816BF9FC898C69D1321AEB9F53598C /* Pods-MyPostsAppTests.release.xcconfig */,
+			);
+			name = "Pods-MyPostsAppTests";
+			path = "Target Support Files/Pods-MyPostsAppTests";
+			sourceTree = "<group>";
+		};
+		A76A1EF2E6BE71B3B7AC8C948C2761E7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				86D5F36A2C04AC8C2E87724695DF5460 /* ToastViewSwift.modulemap */,
+				2FBE6DEBA109904D039A865D415B9466 /* ToastViewSwift-dummy.m */,
+				EA6545A607DD5C55DF16814274666406 /* ToastViewSwift-Info.plist */,
+				B3005CEBDC91E49CA0ECFB0B6445C7B8 /* ToastViewSwift-prefix.pch */,
+				D24563FAF4EE036200CC79980C5DB442 /* ToastViewSwift-umbrella.h */,
+				FB2AF91BE2E3E0438A71EB2529F2481A /* ToastViewSwift.debug.xcconfig */,
+				BC33734F30182EA6AB9C19734C058BC0 /* ToastViewSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ToastViewSwift";
+			sourceTree = "<group>";
+		};
+		A787AE16CB9C1469FB0082BB9CFC4FCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EA8F29F5E48B42BA14574368116F703 /* SwiftLoader */,
+				79C9D54FBAD9675C238866A4D38F91A8 /* ToastViewSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				A787AE16CB9C1469FB0082BB9CFC4FCD /* Pods */,
+				1C3B432E2634AFD1F0BD8F0CECC40C63 /* Products */,
+				27CC1981A448721A4E9E519A200EEA27 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5EDAD1CD1364DC3C4BEAF6BF9014EF54 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622F3C87EC992C7E9AC2F2D0DCDC025D /* ToastViewSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8924109A1426B822B2D6F3F7AD56173A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05C6E944EEBB1EB01182C0C3A44B05E /* SwiftLoader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13DAF58E3EB426E1B0E34AB814306B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A9EF38BD63FA4F9C1F58A88BA42748 /* Pods-MyPostsAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C38685E3C588CFC1A992C5FCCCB533 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A883C341ADC6FC21AB61CC408C432BB /* Pods-MyPostsApp-MyPostsAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D72FFF82863EF19E068EB481F60FC192 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE9D371ACE17126C63F5BF8BC94C67F /* Pods-MyPostsApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		48462CAD15D5040089A491E5D1F11BCD /* Pods-MyPostsApp-MyPostsAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F6FF36C2586C6D524370272DBADB15 /* Build configuration list for PBXNativeTarget "Pods-MyPostsApp-MyPostsAppUITests" */;
+			buildPhases = (
+				D4C38685E3C588CFC1A992C5FCCCB533 /* Headers */,
+				4AF9F234EAB80F913682BC030B5786A3 /* Sources */,
+				A8EAC4905C0200739D72D63077B977C0 /* Frameworks */,
+				003C4BB994D813163581559F14402440 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				450806978881E26483F95B6EA3F4612E /* PBXTargetDependency */,
+				1C88832ECFF42079A660466BFAFCD5EF /* PBXTargetDependency */,
+			);
+			name = "Pods-MyPostsApp-MyPostsAppUITests";
+			productName = Pods_MyPostsApp_MyPostsAppUITests;
+			productReference = B6ECE7B3EBA72B936B83AFC52E662F42 /* Pods-MyPostsApp-MyPostsAppUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		5AAC147747C133B0D1A58FCF1E8D1FA3 /* SwiftLoader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FE40BE1B0F83FF381A1BC4F8919A1BA /* Build configuration list for PBXNativeTarget "SwiftLoader" */;
+			buildPhases = (
+				8924109A1426B822B2D6F3F7AD56173A /* Headers */,
+				AF97CA465DF953C8C2C9ECBD35CC3AE2 /* Sources */,
+				938596850EE84E81BAB7C5176BC0FEB0 /* Frameworks */,
+				797B15DF577B70B9687B7DE16DF08735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftLoader;
+			productName = SwiftLoader;
+			productReference = F95953D942C279A34CED5696F48E5839 /* SwiftLoader */;
+			productType = "com.apple.product-type.framework";
+		};
+		5F1155D450E5A6E7F6E6487F5D9084B5 /* Pods-MyPostsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34BA626979BA80D12F99DF47CE21827F /* Build configuration list for PBXNativeTarget "Pods-MyPostsApp" */;
+			buildPhases = (
+				D72FFF82863EF19E068EB481F60FC192 /* Headers */,
+				BEA2B43C5B377AEEAFBF1E9A2BEBB7F9 /* Sources */,
+				2F8F74779DDF33E0945165DE7810EB28 /* Frameworks */,
+				6AF4DE6E82BBBFC037002B509FE532A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71637134391604C22FD74223ED305FF6 /* PBXTargetDependency */,
+				064004F271FBBEAEFEE8D4D1BBF0B5F0 /* PBXTargetDependency */,
+			);
+			name = "Pods-MyPostsApp";
+			productName = Pods_MyPostsApp;
+			productReference = 5AAB1E806FEF6AD885B21922223CD7EE /* Pods-MyPostsApp */;
+			productType = "com.apple.product-type.framework";
+		};
+		A43CFD7DC023C3242E8D6F274CCFFB42 /* Pods-MyPostsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7C2E2BFF89C89AC6063BE521FE17902 /* Build configuration list for PBXNativeTarget "Pods-MyPostsAppTests" */;
+			buildPhases = (
+				D13DAF58E3EB426E1B0E34AB814306B8 /* Headers */,
+				0E37D6208DE3E569D1D54623252799EE /* Sources */,
+				63FA48713CC23A860B2B670978D1A08B /* Frameworks */,
+				6C7D08ADC37552DB27C08DB890CDAAA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2879650F03ED0ECD0C7084E1F5086D96 /* PBXTargetDependency */,
+			);
+			name = "Pods-MyPostsAppTests";
+			productName = Pods_MyPostsAppTests;
+			productReference = 214620A21DFEC0B72CA08443EA5200C9 /* Pods-MyPostsAppTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		B5A4A524995EFC7B90254E4FB975E5BD /* ToastViewSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 676811D2BE872898C87C9879981DE5A5 /* Build configuration list for PBXNativeTarget "ToastViewSwift" */;
+			buildPhases = (
+				5EDAD1CD1364DC3C4BEAF6BF9014EF54 /* Headers */,
+				99512B36022A8BD14696DE4891320B47 /* Sources */,
+				418B91272150A41EF5263D9AA9F9528D /* Frameworks */,
+				8FB923E0C6CB68D097FCB06404837F75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToastViewSwift;
+			productName = ToastViewSwift;
+			productReference = CB6C7D4B51E232E5A89E82040FD01E77 /* ToastViewSwift */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1C3B432E2634AFD1F0BD8F0CECC40C63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F1155D450E5A6E7F6E6487F5D9084B5 /* Pods-MyPostsApp */,
+				48462CAD15D5040089A491E5D1F11BCD /* Pods-MyPostsApp-MyPostsAppUITests */,
+				A43CFD7DC023C3242E8D6F274CCFFB42 /* Pods-MyPostsAppTests */,
+				5AAC147747C133B0D1A58FCF1E8D1FA3 /* SwiftLoader */,
+				B5A4A524995EFC7B90254E4FB975E5BD /* ToastViewSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		003C4BB994D813163581559F14402440 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AF4DE6E82BBBFC037002B509FE532A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C7D08ADC37552DB27C08DB890CDAAA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797B15DF577B70B9687B7DE16DF08735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB923E0C6CB68D097FCB06404837F75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E37D6208DE3E569D1D54623252799EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042FBD8A640B1B6717502E459B3F7A89 /* Pods-MyPostsAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AF9F234EAB80F913682BC030B5786A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C48C10B6255058B305BB8570CE55CB3 /* Pods-MyPostsApp-MyPostsAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99512B36022A8BD14696DE4891320B47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70FEC3F22C89D17F31E0FDE3EA30D2F /* AppleToastView.swift in Sources */,
+				46EEAB57F6F5ED763589DB6BED56BB7D /* IconAppleToastView.swift in Sources */,
+				35275B6D33450B4FFCDDCD4885071EDA /* TextAppleToastView.swift in Sources */,
+				EED589CB9492BCEEAB72B224040BCC7B /* Toast.swift in Sources */,
+				EC895033F49526BB4EB8138503B39DAD /* ToastConfiguration.swift in Sources */,
+				3385BC41BADDB93B2CF66693E5A0BAA1 /* ToastDelegate.swift in Sources */,
+				86B6BB4EA7E0C2478219F5B139241646 /* ToastView.swift in Sources */,
+				5AFC42C707BCAD3D502A1AD13868BFA5 /* ToastViewSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF97CA465DF953C8C2C9ECBD35CC3AE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA7B715B5126C4F918E99872F45DB38 /* SwiftLoader.swift in Sources */,
+				6714C7D157F03F808B4425AE2608C06E /* SwiftLoader-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA2B43C5B377AEEAFBF1E9A2BEBB7F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4FA47A4BB9A9B1AB3A9EB4F47F08EA6 /* Pods-MyPostsApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		064004F271FBBEAEFEE8D4D1BBF0B5F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ToastViewSwift;
+			target = B5A4A524995EFC7B90254E4FB975E5BD /* ToastViewSwift */;
+			targetProxy = 39832E78164B1BEB1093E192053E8E4D /* PBXContainerItemProxy */;
+		};
+		1C88832ECFF42079A660466BFAFCD5EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ToastViewSwift;
+			target = B5A4A524995EFC7B90254E4FB975E5BD /* ToastViewSwift */;
+			targetProxy = CB32EB3A4FADACF57EB1FED745594C22 /* PBXContainerItemProxy */;
+		};
+		2879650F03ED0ECD0C7084E1F5086D96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MyPostsApp";
+			target = 5F1155D450E5A6E7F6E6487F5D9084B5 /* Pods-MyPostsApp */;
+			targetProxy = F5EF7569FD30238CC2F3437327AE6389 /* PBXContainerItemProxy */;
+		};
+		450806978881E26483F95B6EA3F4612E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLoader;
+			target = 5AAC147747C133B0D1A58FCF1E8D1FA3 /* SwiftLoader */;
+			targetProxy = 3B7158C49BC231B2B64D08288213B1C8 /* PBXContainerItemProxy */;
+		};
+		71637134391604C22FD74223ED305FF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLoader;
+			target = 5AAC147747C133B0D1A58FCF1E8D1FA3 /* SwiftLoader */;
+			targetProxy = 465D565D0EE0534857A10B0A14C786ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09909ECBA13E8F70A928465E7F7A9A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		25B4454275B124933AAB1698CAB38EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F44FE20D0C813654284402F599D06B8 /* Pods-MyPostsApp-MyPostsAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyPostsApp-MyPostsAppUITests/Pods-MyPostsApp-MyPostsAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyPostsApp-MyPostsAppUITests/Pods-MyPostsApp-MyPostsAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2DE0D8898245310716431F92FA4989FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		474E9E514E7B2A4F5ADB160F534E2D66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D816BF9FC898C69D1321AEB9F53598C /* Pods-MyPostsAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyPostsAppTests/Pods-MyPostsAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyPostsAppTests/Pods-MyPostsAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A8F27E2B0318871A935EEBFDBA32D32D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABAB77FE05232706D745D9A15DD13DDE /* Pods-MyPostsApp-MyPostsAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyPostsApp-MyPostsAppUITests/Pods-MyPostsApp-MyPostsAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyPostsApp-MyPostsAppUITests/Pods-MyPostsApp-MyPostsAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C176ED90EBAA6130DB92D04E1AEF7AF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A20713BFA29DBBB43B52A1DFC9E4B07 /* Pods-MyPostsApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyPostsApp/Pods-MyPostsApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyPostsApp/Pods-MyPostsApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C5123F9271BD7AF0BDBE4727A53EE2B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AEF06E5F3AE860CA5D2977B3712A8AA /* Pods-MyPostsApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyPostsApp/Pods-MyPostsApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyPostsApp/Pods-MyPostsApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF1B8C67BE5983DFFF66C7775C2C10ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC33734F30182EA6AB9C19734C058BC0 /* ToastViewSwift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ToastViewSwift/ToastViewSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ToastViewSwift/ToastViewSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ToastViewSwift/ToastViewSwift.modulemap";
+				PRODUCT_MODULE_NAME = ToastViewSwift;
+				PRODUCT_NAME = ToastViewSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E698E6DDEFE3B00D1AA98D607C24524C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72D23A84FF16307EF2EB2722C25D0D21 /* SwiftLoader.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftLoader/SwiftLoader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftLoader/SwiftLoader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftLoader/SwiftLoader.modulemap";
+				PRODUCT_MODULE_NAME = SwiftLoader;
+				PRODUCT_NAME = SwiftLoader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E89AE842BA15EAFA83124091CBD4B529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93729887D3F7B6641FCFD63EDE706772 /* SwiftLoader.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftLoader/SwiftLoader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftLoader/SwiftLoader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftLoader/SwiftLoader.modulemap";
+				PRODUCT_MODULE_NAME = SwiftLoader;
+				PRODUCT_NAME = SwiftLoader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB2E7AB0679322F8E1FF36EFE895ADC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB2AF91BE2E3E0438A71EB2529F2481A /* ToastViewSwift.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ToastViewSwift/ToastViewSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ToastViewSwift/ToastViewSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ToastViewSwift/ToastViewSwift.modulemap";
+				PRODUCT_MODULE_NAME = ToastViewSwift;
+				PRODUCT_NAME = ToastViewSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FFAC4B49F486E45887DE4338C4848ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96EADBFE8AA29B0D9EC71EAB857A0F4A /* Pods-MyPostsAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyPostsAppTests/Pods-MyPostsAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyPostsAppTests/Pods-MyPostsAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04F6FF36C2586C6D524370272DBADB15 /* Build configuration list for PBXNativeTarget "Pods-MyPostsApp-MyPostsAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B4454275B124933AAB1698CAB38EC6 /* Debug */,
+				A8F27E2B0318871A935EEBFDBA32D32D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FE40BE1B0F83FF381A1BC4F8919A1BA /* Build configuration list for PBXNativeTarget "SwiftLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E89AE842BA15EAFA83124091CBD4B529 /* Debug */,
+				E698E6DDEFE3B00D1AA98D607C24524C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34BA626979BA80D12F99DF47CE21827F /* Build configuration list for PBXNativeTarget "Pods-MyPostsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C176ED90EBAA6130DB92D04E1AEF7AF0 /* Debug */,
+				C5123F9271BD7AF0BDBE4727A53EE2B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09909ECBA13E8F70A928465E7F7A9A92 /* Debug */,
+				2DE0D8898245310716431F92FA4989FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		676811D2BE872898C87C9879981DE5A5 /* Build configuration list for PBXNativeTarget "ToastViewSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2E7AB0679322F8E1FF36EFE895ADC8 /* Debug */,
+				CF1B8C67BE5983DFFF66C7775C2C10ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7C2E2BFF89C89AC6063BE521FE17902 /* Build configuration list for PBXNativeTarget "Pods-MyPostsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFAC4B49F486E45887DE4338C4848ACB /* Debug */,
+				474E9E514E7B2A4F5ADB160F534E2D66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

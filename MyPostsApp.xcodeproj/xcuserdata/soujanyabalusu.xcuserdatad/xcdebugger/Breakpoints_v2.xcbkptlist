@@ -94,8 +94,8 @@
             filePath = "MyPostsApp/Controllers/Favourites/FavoritesViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,8 +110,8 @@
             filePath = "MyPostsApp/Controllers/Favourites/FavoritesViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -174,8 +174,8 @@
             filePath = "MyPostsApp/Controllers/AllPosts/PostsNetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "getPost(userId:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -210,38 +210,6 @@
             endingLineNumber = "21"
             landmarkName = "testFetchPosts()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "267CE879-1631-405E-BDA7-709FD1966757 - bb623f18b4041c98"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MyPostsAppTests.PostListviewclass.setUpWithError() throws -&gt; ()"
-                  moduleName = "MyPostsAppTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/soujanyabalusu/Desktop/PostsListApp/MyPostsAppTests/PostListviewclass.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "112">
-               </Location>
-               <Location
-                  uuid = "267CE879-1631-405E-BDA7-709FD1966757 - 2611e814a5da7833"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MyPostsAppTests.PostListviewclass.testFetchPosts() -&gt; ()"
-                  moduleName = "MyPostsAppTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/soujanyabalusu/Desktop/PostsListApp/MyPostsAppTests/PostListviewclass.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "128">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -254,8 +222,8 @@
             filePath = "MyPostsApp/Controllers/AllPosts/PostTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "addToFavouritesAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -304,7 +272,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "127"
             endingLineNumber = "127"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -318,8 +286,8 @@
             filePath = "MyPostsApp/Controllers/Comments/CommnetsNetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "getComments(postID:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -334,8 +302,8 @@
             filePath = "MyPostsApp/Controllers/Comments/CommnetsNetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "getComments(postID:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -350,8 +318,8 @@
             filePath = "MyPostsApp/Controllers/Comments/CommnetsNetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "getComments(postID:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -368,7 +336,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "132"
             endingLineNumber = "132"
-            landmarkName = "tableView(_:heightForRowAt:)"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -386,6 +354,288 @@
             endingLineNumber = "32"
             landmarkName = "cellViewModel"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C21B051E-E798-4A73-983A-3031EB0CCB02"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyPostsApp/Controllers/Comments/CommnetsNetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "getComments(postID:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D1C9BB6-F4E1-4B7D-A05F-B14A8C94162A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyPostsApp/Controllers/Comments/CommnetsNetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "MockCommentApiService"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "7D1C9BB6-F4E1-4B7D-A05F-B14A8C94162A - e92c6736cf8b32c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPostsApp.MockCommentApiService.deinit"
+                  moduleName = "MyPostsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/soujanyabalusu/Desktop/PostsListApp/MyPostsApp/Controllers/Comments/CommnetsNetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "7D1C9BB6-F4E1-4B7D-A05F-B14A8C94162A - d01597f5897e126b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPostsApp.MockCommentApiService.__deallocating_deinit"
+                  moduleName = "MyPostsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/soujanyabalusu/Desktop/PostsListApp/MyPostsApp/Controllers/Comments/CommnetsNetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "7D1C9BB6-F4E1-4B7D-A05F-B14A8C94162A - a59b43e479d1626d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPostsApp.MockCommentApiService.__allocating_init() -&gt; MyPostsApp.MockCommentApiService"
+                  moduleName = "MyPostsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/soujanyabalusu/Desktop/PostsListApp/MyPostsApp/Controllers/Comments/CommnetsNetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "7D1C9BB6-F4E1-4B7D-A05F-B14A8C94162A - 62fec981f78c089b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPostsApp.MockCommentApiService.init() -&gt; MyPostsApp.MockCommentApiService"
+                  moduleName = "MyPostsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/soujanyabalusu/Desktop/PostsListApp/MyPostsApp/Controllers/Comments/CommnetsNetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "7D1C9BB6-F4E1-4B7D-A05F-B14A8C94162A - 2102c47c4f4161c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPostsAppTests.MockCommentApiService.deinit"
+                  moduleName = "MyPostsAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/soujanyabalusu/Desktop/PostsListApp/MyPostsApp/Controllers/Comments/CommnetsNetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "7D1C9BB6-F4E1-4B7D-A05F-B14A8C94162A - 57ca9dc7e693ee6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPostsAppTests.MockCommentApiService.__deallocating_deinit"
+                  moduleName = "MyPostsAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/soujanyabalusu/Desktop/PostsListApp/MyPostsApp/Controllers/Comments/CommnetsNetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "7D1C9BB6-F4E1-4B7D-A05F-B14A8C94162A - b0e0091a3e7d1d50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPostsAppTests.MockCommentApiService.__allocating_init() -&gt; MyPostsAppTests.MockCommentApiService"
+                  moduleName = "MyPostsAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/soujanyabalusu/Desktop/PostsListApp/MyPostsApp/Controllers/Comments/CommnetsNetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "7D1C9BB6-F4E1-4B7D-A05F-B14A8C94162A - 65859bc4fbce1ee3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPostsAppTests.MockCommentApiService.init() -&gt; MyPostsAppTests.MockCommentApiService"
+                  moduleName = "MyPostsAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/soujanyabalusu/Desktop/PostsListApp/MyPostsApp/Controllers/Comments/CommnetsNetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2F2CD85-3D07-465C-895F-C3FC406DAA7E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyPostsApp/Controllers/Comments/CommnetsNetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "getComments(postID:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D790569-52DF-45E8-B6E2-40193A521D5F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyPostsApp/Controllers/Comments/CommnetsNetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "getComments(postID:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D35A8A18-2DE0-441E-AC8F-BC2699D15E61"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyPostsAppUITests/PostListUITest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "loadPostsFromTestBundle()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "11EE79A7-F67C-4CD9-A2AA-821F24EDB536"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyPostsAppUITests/PostListUITest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "setUpWithError()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E988FDCF-C041-4694-A60D-CBE4902F1E73"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyPostsAppUITests/PostListUITest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "testTableView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E988FDCF-C041-4694-A60D-CBE4902F1E73 - 9ad595fa47e9a7bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPostsAppUITests.PostListUITest.testTableView() throws -&gt; ()"
+                  moduleName = "MyPostsAppUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/soujanyabalusu/Desktop/PostsListApp/MyPostsAppUITests/PostListUITest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "E988FDCF-C041-4694-A60D-CBE4902F1E73 - 9ad595fa47e9a7bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyPostsAppUITests.PostListUITest.testTableView() throws -&gt; ()"
+                  moduleName = "MyPostsAppUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/soujanyabalusu/Desktop/PostsListApp/MyPostsAppUITests/PostListUITest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82EA052A-AA22-4486-979B-95531E2360BE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyPostsAppUITests/PostListUITest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "setUpWithError()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

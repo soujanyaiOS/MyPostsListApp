@@ -29,8 +29,10 @@ class BaseViewController: UIViewController {
     }
     
     @objc func logout() {
+       
         let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as! SceneDelegate
         sceneDelegate.windowCoordinator.presentLoginViewController()
+        Constants.showToastMessage(Constants.logoutMessage)
     }
     
     private func setLogoutButton() {

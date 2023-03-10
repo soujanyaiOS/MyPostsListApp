@@ -30,8 +30,8 @@ class CommentsTableViewCell: UITableViewCell {
     var cellViewModel: CommentsDataModel? {
         didSet {
             userNameLabel.text = cellViewModel?.email
-            titleLabel.text = cellViewModel?.name
-            bodyLabel.text = cellViewModel?.body
+            titleLabel.text = "Name : \(cellViewModel?.name ?? "")"
+            bodyLabel.text  = "Body  : \(cellViewModel?.body ?? "")"
         }
     }
     

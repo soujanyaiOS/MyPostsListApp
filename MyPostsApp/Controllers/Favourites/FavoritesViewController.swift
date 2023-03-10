@@ -36,6 +36,9 @@ class FavoritesViewController: BaseViewController {
         viewModel.getFavourites()
         viewModel.reloadTableView = {[weak self] in
             DispatchQueue.main.async {
+                if self?.viewModel.favouritesArray.count == 0 {
+                    Constants.showToastMessage(Constants.noFavDataAvailable)
+                }
                 self?.ListTableView.reloadData()
             }
         }

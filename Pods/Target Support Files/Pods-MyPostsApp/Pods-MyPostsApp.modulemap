@@ -1,0 +1,6 @@
+framework module Pods_MyPostsApp {
+  umbrella header "Pods-MyPostsApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

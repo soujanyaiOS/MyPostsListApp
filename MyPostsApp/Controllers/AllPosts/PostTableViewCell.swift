@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+
 protocol PostTableViewCellProtocal: AnyObject {
     func reloadData()
 }
@@ -25,10 +26,10 @@ class PostTableViewCell: UITableViewCell {
             titleLabel.text = cellViewModel?.title
             bodyLabel.text = cellViewModel?.body
             if AppDelegate.sharedAppDelegate.coreDataStack.checkIfRecordExists(withID: cellViewModel?.id ?? 0) {
-                favButton.setImage(UIImage(systemName: "star"), for: .normal)
+                favButton.setImage(ButtonImage.starred.image, for: .normal)
             }
             else{
-                favButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
+                favButton.setImage(ButtonImage.unStar.image, for: .normal)
             }
         }
     }
@@ -56,12 +57,14 @@ class PostTableViewCell: UITableViewCell {
         
         if AppDelegate.sharedAppDelegate.coreDataStack.checkIfRecordExists(withID: cellViewModel?.id ?? 0) {
             if let cellModel = cellViewModel {
-            AppDelegate.sharedAppDelegate.coreDataStack.saveToFavourites(cellViewModel: cellModel)
-            delegate?.reloadData()
+                
+                AppDelegate.sharedAppDelegate.coreDataStack.saveToFavourites(cellViewModel: cellModel)
+                delegate?.reloadData()
+                Constants.showToastMessage(Constants.savedToFavourites)
             }
         }
         else {
-            print("Record ID \(self.cellViewModel?.id ?? 0)  exists!")
+            Constants.showToastMessage(Constants.RecordExistsFavourites)
         }
     }
 }

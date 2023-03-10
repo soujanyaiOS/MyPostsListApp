@@ -10,18 +10,28 @@ import CoreData
 @testable import MyPostsApp
 
 class FavouritesListClass: XCTestCase {
- 
-    override func setUpWithError() throws {
-    }
+    
+    var viewModel: FavouritesViewModel!
+    
+    var repository: FavouriteRepository!
+    var persistentContainer: NSPersistentContainer!
     
     override func setUp() {
         super.setUp()
-       // testCoreDataStack = TestCoreDataStack(modelName: "MyPostsApp")
-        
-        
         viewModel = FavouritesViewModel()
-        // Insert some test data into Core Data
-        //insertTestData()
+        // Create an in-memory Core Data persistent container for testing
+        persistentContainer = NSPersistentContainer(name: "MyPostsApp")
+        let description = NSPersistentStoreDescription()
+        description.type = NSInMemoryStoreType
+        persistentContainer.persistentStoreDescriptions = [description]
+        
+        // Load the persistent store
+        persistentContainer.loadPersistentStores { _, error in
+            XCTAssertNil(error)
+        }
+    
+        viewModel = FavouritesViewModel()
+  
     }
     
     
@@ -29,7 +39,7 @@ class FavouritesListClass: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-
+    
     
     func testExample() throws {
         // This is an example of a functional test case.

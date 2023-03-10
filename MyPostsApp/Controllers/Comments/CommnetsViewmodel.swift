@@ -39,10 +39,10 @@ class CommnetsViewmodel: NSObject {
         self.commentApiService = commentApiService
     }
     
-    init(apiService: CommnetsNetworkManagerProtocal) {
-           self.commentApiService = apiService
-       }
-    
+//    init(apiService: CommnetsNetworkManagerProtocal) {
+//           self.commentApiService = apiService
+//       }
+//    
     func fetchData(commentsData: Comments) {
         self.comments = commentsData
         var vms = [CommentsDataModel]()

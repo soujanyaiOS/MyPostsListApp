@@ -23,7 +23,7 @@ enum APIEndpoint {
             return URL(string: urlString)!
             
         case .getComments(let postId):
-            let urlString = "https://jsonplaceholder.typicode.com/posts/\(postId)/comments"
+            let urlString = "https://jsonplaceholder.typicode.com/comments?postId=\(postId)"
             return URL(string: urlString)!
             
             
