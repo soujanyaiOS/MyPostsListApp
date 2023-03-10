@@ -60,7 +60,7 @@ class PostTableViewCell: UITableViewCell {
                 
                 AppDelegate.sharedAppDelegate.coreDataStack.saveToFavourites(cellViewModel: cellModel)
                 delegate?.reloadData()
-                Constants.showToastMessage(Constants.savedToFavourites)
+               // Constants.showToastMessage(Constants.savedToFavourites)
             }
         }
         else {
